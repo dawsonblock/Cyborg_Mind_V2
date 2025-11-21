@@ -1,0 +1,8 @@
+torch
+torchvision
+transformers
+timm
+open-clip-torch
+pygame
+prometheus-client
+matplotlib

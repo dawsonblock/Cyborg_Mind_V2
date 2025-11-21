@@ -1,0 +1,13 @@
+# Core ML dependencies
+torch>=2.0.0
+torchvision>=0.15.0
+transformers>=4.30.0
+numpy<2.0.0
+opencv-python>=4.8.0
+
+# TensorBoard for monitoring
+tensorboard>=2.14.0
+
+# MineRL and Gym (install separately - see SETUP_STATUS.md)
+# gym==0.21.0
+# minerl==0.4.4
