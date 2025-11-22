@@ -1,0 +1,6 @@
+torch
+numpy
+flask
+prometheus_client
+torchaudio
+pillow
