@@ -1,0 +1,52 @@
+{
+  "title": "Capsule Brain Monitoring",
+  "schemaVersion": 30,
+  "version": 1,
+  "refresh": "30s",
+  "panels": [
+    {
+      "type": "graph",
+      "title": "Memory Pressure",
+      "gridPos": {"x": 0, "y": 0, "w": 12, "h": 8},
+      "targets": [
+        {
+          "expr": "capsule_brain_memory_pressure",
+          "legendFormat": "pressure"
+        }
+      ]
+    },
+    {
+      "type": "graph",
+      "title": "Inference Latency",
+      "gridPos": {"x": 12, "y": 0, "w": 12, "h": 8},
+      "targets": [
+        {
+          "expr": "capsule_brain_latency_seconds",
+          "legendFormat": "latency"
+        }
+      ]
+    },
+    {
+      "type": "graph",
+      "title": "Inference Count",
+      "gridPos": {"x": 0, "y": 8, "w": 12, "h": 8},
+      "targets": [
+        {
+          "expr": "capsule_brain_inferences_total",
+          "legendFormat": "inferences"
+        }
+      ]
+    },
+    {
+      "type": "graph",
+      "title": "Active Tasks",
+      "gridPos": {"x": 12, "y": 8, "w": 12, "h": 8},
+      "targets": [
+        {
+          "expr": "capsule_brain_active_tasks",
+          "legendFormat": "active"
+        }
+      ]
+    }
+  ]
+}

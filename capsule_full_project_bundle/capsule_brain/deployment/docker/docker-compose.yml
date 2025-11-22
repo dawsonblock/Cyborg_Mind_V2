@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  capsule_brain:
+    build:
+      context: ../..
+      dockerfile: capsule_brain/deployment/docker/Dockerfile
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+    ports:
+      - "9090:9090"  # Prometheus metrics
+      - "5000:5000"  # API and GUI
+    command: ["python3", "-m", "capsule_brain.api.app"]
