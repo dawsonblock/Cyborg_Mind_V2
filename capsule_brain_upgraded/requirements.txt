@@ -1,0 +1,13 @@
+torch
+numpy
+gym
+flask
+prometheus_client
+stable-baselines3
+minerl
+# Optional: minedojo is only needed if you plan to use MineDojo environments
+minedojo
+# For CLIP teacher support. Either install OpenAI's CLIP or open_clip
+clip @ git+https://github.com/openai/CLIP.git
+torchaudio
+pillow

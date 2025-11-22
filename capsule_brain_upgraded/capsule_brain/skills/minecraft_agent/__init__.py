@@ -1,0 +1,1 @@
+"""Minecraft skill package."""

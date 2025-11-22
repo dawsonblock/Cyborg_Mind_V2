@@ -1,0 +1,8 @@
+{
+    "allowed_skills": {
+        "MineRLTreechop-v0": ["minecraft_agent"],
+        "Gridworld": ["gridworld_agent"],
+        "Chat": ["chat_agent", "coding_agent"],
+        "Coding": ["coding_agent"]
+    }
+}

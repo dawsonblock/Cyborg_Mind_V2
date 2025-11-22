@@ -1,0 +1,12 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  # Scrape the Capsule Brain metrics endpoint.  The HTTP server
+  # should be started with ``prometheus_client.start_http_server`` on
+  # the port specified here (default 8000) from within your
+  # deployment.
+  - job_name: 'capsule_brain'
+    static_configs:
+      - targets: ['localhost:8000']
